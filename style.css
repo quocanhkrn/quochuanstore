@@ -161,6 +161,14 @@ hr {
   opacity: 1;
 }
 
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border: none !important;
+}
+
 /* NAVBAR */
 nav .brand {
   width: fit-content;
@@ -192,6 +200,7 @@ nav .note {
   gap: 20px;
 }
 
+/* 
 .service_card {
   height: 150px;
 }
@@ -233,4 +242,59 @@ nav .note {
 
 .service_card.vieon:hover {
   outline: 5px solid rgba(128, 194, 65, 0.1);
+} */
+
+.service_list>button {
+  height: 150px;
+}
+
+.service_list>button img {
+  height: 50%;
+  object-fit: contain;
+}
+
+.service_list .list-group span {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.service_list>button.mykplus a {
+  height: 100%;
+}
+
+.service_list>button.mykplus {
+  background-color: rgba(219, 33, 41, 0.2);
+  outline: 5px solid rgba(219, 33, 41, 0);
+}
+
+.service_list>button.mykplus:hover {
+  outline: 5px solid rgba(219, 33, 41, 0.1);
+}
+
+.service_list>button.fptplay {
+  background-color: rgba(246, 96, 9, 0.2);
+  outline: 5px solid rgba(246, 96, 9, 0);
+}
+
+.service_list>button.fptplay:hover {
+  outline: 5px solid rgba(246, 96, 9, 0.1);
+}
+
+.service_list #fptplayModal .modal-title span {
+  color: rgb(246, 96, 9);
+  font-weight: 700;
+}
+
+.service_list>button.vieon {
+  background-color: rgba(128, 194, 65, 0.2);
+  outline: 5px solid rgba(128, 194, 65, 0);
+}
+
+.service_list>button.vieon:hover {
+  outline: 5px solid rgba(128, 194, 65, 0.2);
+}
+
+.service_list #vieonModal .modal-title span {
+  color: rgb(128, 194, 65);
+  font-weight: 700;
 }
