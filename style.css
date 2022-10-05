@@ -144,7 +144,8 @@ table {
   --primary-color: #47B5FF;
   --secondary-color: #1363DF;
   --tertiary-color: #06283D;
-  --neutral-color: #DFF6FF;
+  --forth-color: #DFF6FF;
+  --neutral-color: #f7f7f7;
   --primary-text-color: #06283D;
 }
 
@@ -155,27 +156,32 @@ body {
   height: 100vh;
 }
 
+hr {
+  border: 1px solid var(--neutral-color);
+  opacity: 1;
+}
+
 /* NAVBAR */
 nav .brand {
   width: fit-content;
 }
 
 nav .brand a {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--primary-color);
 }
 
 nav .brand span {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
 }
 
 nav .note {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--primary-color);
-  background-color: var(--neutral-color);
+  background-color: var(--forth-color);
   width: fit-content;
 }
 
