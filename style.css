@@ -260,6 +260,7 @@ nav .note {
   background-color: white;
   border: 1px solid var(--neutral-color);
   box-shadow: 20px 15px 40px 0px rgba(70, 70, 70, 0.1);
+  width: 100%;
   height: 100%;
 }
 
@@ -338,11 +339,19 @@ nav .note {
   padding: 5px;
 }
 
+.plan_banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 .plan .warranty_policy {
   font-weight: 600;
   color: var(--primary-color);
   background-color: var(--forth-color);
 }
+
 
 .plan .warranty_policy:hover {
   color: white;
