@@ -141,18 +141,17 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary-color: #47B5FF;
-  --secondary-color: #1363DF;
-  --tertiary-color: #06283D;
-  --forth-color: #DFF6FF;
-  --neutral-color: #f7f7f7;
-  --primary-text-color: #06283D;
+  --primary-color: rgb(71, 181, 255);
+  --secondary-color: rgb(19, 99, 223);
+  --tertiary-color: rgb(6, 40, 61);
+  --forth-color: rgb(223, 246, 255);
+  --neutral-color: rgb(240, 240, 240);
+  --primary-text-color: rgb(6, 40, 61);
 }
 
 body {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  line-height: 1.5;
   height: 100vh;
 }
 
@@ -200,55 +199,12 @@ nav .note {
   gap: 20px;
 }
 
-/* 
-.service_card {
-  height: 150px;
-}
-
-.service_card a {
-  height: 100%;
-}
-
-.service_card img {
-  height: 50%;
-  object-fit: contain;
-}
-
-.service_card.fpt {
-  text-align: center;
-  outline: 5px solid rgba(246, 96, 9, 0);
-  background-color: rgba(246, 96, 9, 0.2);
-}
-
-.service_card.fpt:hover {
-  outline: 5px solid rgba(246, 96, 9, 0.1);
-}
-
-.service_card.mykplus {
-  text-align: center;
-  background-color: rgba(219, 33, 41, 0.2);
-  outline: 5px solid rgba(219, 33, 41, 0);
-}
-
-.service_card.mykplus:hover {
-  outline: 5px solid rgba(219, 33, 41, 0.1);
-}
-
-.service_card.vieon {
-  text-align: center;
-  background-color: rgba(128, 194, 65, 0.2);
-  outline: 5px solid rgba(128, 194, 65, 0);
-}
-
-.service_card.vieon:hover {
-  outline: 5px solid rgba(128, 194, 65, 0.1);
-} */
-
 .service_list>button {
   height: 150px;
 }
 
 .service_list>button img {
+  width: 100%;
   height: 50%;
   object-fit: contain;
 }
@@ -297,4 +253,72 @@ nav .note {
 .service_list #vieonModal .modal-title span {
   color: rgb(128, 194, 65);
   font-weight: 700;
+}
+
+/* PRICING */
+.plan_card {
+  background-color: white;
+  border: 1px solid var(--neutral-color);
+  box-shadow: 20px 15px 40px 0px rgba(70, 70, 70, 0.1);
+  height: 100%;
+  gap: 10px;
+}
+
+.plan img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.plan_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.plan_title span {
+  font-weight: 500;
+}
+
+.plan_devices {
+  font-weight: 600;
+  width: fit-content;
+  background-color: var(--secondary-color);
+}
+
+.plan_pricing .nav {
+  gap: 10px;
+}
+
+.plan_pricing .nav button {
+  font-weight: 700;
+  color: var(--primary-color);
+  background-color: var(--forth-color);
+}
+
+.plan_pricing .nav button.active {
+  background-color: var(--primary-color);
+}
+
+.plan_pricing p.price {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.plan_pricing .initial_price {
+  font-size: 20px;
+  width: fit-content;
+}
+
+.plan_pricing .initial_price p {
+  width: fit-content;
+  position: relative;
+}
+
+.plan_pricing .initial_price p::before {
+  content: "";
+  background-color: var(--primary-text-color);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
 }
