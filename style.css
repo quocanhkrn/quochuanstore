@@ -261,7 +261,6 @@ nav .note {
   border: 1px solid var(--neutral-color);
   box-shadow: 20px 15px 40px 0px rgba(70, 70, 70, 0.1);
   width: 100%;
-  height: 100%;
 }
 
 .plan_title {
