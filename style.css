@@ -203,19 +203,20 @@ nav .note {
   height: 150px;
 }
 
-.service_list>button img {
+.service_list>button a {
   width: 100%;
   height: 50%;
+}
+
+.service_list>button img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .service_list .list-group span {
   font-weight: 700;
   color: var(--primary-color);
-}
-
-.service_list>button.mykplus a {
-  height: 100%;
 }
 
 .service_list>button.mykplus {
