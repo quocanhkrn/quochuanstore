@@ -263,11 +263,6 @@ nav .note {
   height: 100%;
 }
 
-.plan img {
-  width: 100%;
-  object-fit: contain;
-}
-
 .plan_title {
   font-size: 30px;
   font-weight: 700;
@@ -326,4 +321,30 @@ nav .note {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
+}
+
+.plan_description {
+  width: 80%;
+}
+
+.plan_description ul {
+  font-weight: 600;
+  gap: 15px;
+}
+
+.plan_description ul i {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 5px;
+}
+
+.plan .warranty_policy {
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--forth-color);
+}
+
+.plan .warranty_policy:hover {
+  color: white;
+  background-color: var(--secondary-color);
 }
