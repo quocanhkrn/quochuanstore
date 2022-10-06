@@ -257,13 +257,12 @@ nav .note {
 
 /* PRICING */
 .plan_swiper {
-  width: 100%
+  width: 150%
 }
 
 .plan_card {
   background-color: white;
   border: 1px solid var(--neutral-color);
-  box-shadow: 20px 15px 40px 0px rgba(70, 70, 70, 0.2);
   width: 100%;
 }
 
