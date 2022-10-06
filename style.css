@@ -360,3 +360,28 @@ nav .note {
   color: white;
   background-color: var(--secondary-color);
 }
+
+/* POLICY */
+.policy {
+  background-image: url(/imgs/bg_policy.jpg);
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+}
+
+.policy .content p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.policy .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .policy {
+    height: 100%;
+  }
+}
