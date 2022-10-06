@@ -256,6 +256,10 @@ nav .note {
 }
 
 /* PRICING */
+.plan_swiper {
+  width: 100%
+}
+
 .plan_card {
   background-color: white;
   border: 1px solid var(--neutral-color);
